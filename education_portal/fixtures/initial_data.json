@@ -1,0 +1,139 @@
+[
+  {
+    "model": "education_portal.servicecategory",
+    "pk": 1,
+    "fields": {
+      "name": "Ứng dụng giáo dục",
+      "description": "Các ứng dụng phục vụ công tác giáo dục"
+    }
+  },
+  {
+    "model": "education_portal.servicecategory",
+    "pk": 2,
+    "fields": {
+      "name": "Quản lý dữ liệu",
+      "description": "Các hệ thống quản lý dữ liệu ngành giáo dục"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 1,
+    "fields": {
+      "name": "eNetViet",
+      "category": 1,
+      "description": "Ứng dụng truyền thông giáo dục",
+      "icon": "services/icons/enetviet.png",
+      "url": "https://web.enetviet.com/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 2,
+    "fields": {
+      "name": "MISA EMIS",
+      "category": 1,
+      "description": "Thanh toán không dùng tiền mặt",
+      "icon": "services/icons/misa-emis.png",
+      "url": "https://emisapp.misa.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 3,
+    "fields": {
+      "name": "E.CarD",
+      "category": 1,
+      "description": "Hệ thống điểm danh thông minh",
+      "icon": "services/icons/ecard.png",
+      "url": "https://sgd.hoabinh.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 4,
+    "fields": {
+      "name": "Quản lý hồ sơ sổ sách",
+      "category": 2,
+      "description": "Hệ thống quản lý hồ sơ sổ sách điện tử",
+      "icon": "services/icons/qlhhss.png",
+      "url": "https://hsdtsgd.qlgd.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 5,
+    "fields": {
+      "name": "Sổ điểm điện tử",
+      "category": 2,
+      "description": "Học bạ điện tử tích hợp ký số",
+      "icon": "services/icons/ieoc.png",
+      "url": "https://sgd.hoabinh.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 6,
+    "fields": {
+      "name": "V-portal",
+      "category": 1,
+      "description": "Hệ thống cổng thông tin điện tử",
+      "icon": "services/icons/ieoc.png",
+      "url": "https://hoabinh.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 7,
+    "fields": {
+      "name": "Kiểm định chất lượng giáo dục",
+      "category": 2,
+      "description": "Hệ thống kiểm định chất lượng giáo dục",
+      "icon": "services/icons/kiemdinhchatluonggd.png",
+      "url": "https://kdclsgd.qlgd.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 8,
+    "fields": {
+      "name": "VieLib",
+      "category": 1,
+      "description": "Thư viện điện tử trường học",
+      "icon": "services/icons/vielib.png",
+      "url": "https://admin.thuvien.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 9,
+    "fields": {
+      "name": "V.Study",
+      "category": 1,
+      "description": "Hệ thống học & thi trực tuyến",
+      "icon": "services/icons/ieoc.png",
+      "url": "https://sgd.hoabinh.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 10,
+    "fields": {
+      "name": "Tuyển sinh đầu cấp",
+      "category": 2,
+      "description": "Hệ thống tuyển sinh đầu cấp",
+      "icon": "services/icons/tsdc.png",
+      "url": "https://sgd.hoabinh.edu.vn/"
+    }
+  },
+  {
+    "model": "education_portal.service",
+    "pk": 11,
+    "fields": {
+      "name": "IEOC",
+      "category": 2,
+      "description": "Trung tâm điều hành giáo dục thông minh",
+      "icon": "services/icons/ieoc.png",
+      "url": "https://dieuhanhgiaoduc.vn/"
+    }
+  }
+]

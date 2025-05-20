@@ -1,0 +1,142 @@
+<!--
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="hero-content">
+        <h1 class="hero-title">Chuyển đổi số Giáo dục Tỉnh Hòa Bình</h1>
+    </div>
+</div>
+
+<div class="services-circle">
+    <div class="circle-container">
+        <div class="circle-center"></div>
+        <div class="circle-boundary"></div>
+
+        <! Service Icons Around Circle -->
+        <!--{% for service in services %} -->
+     <!--  <div class="service-icon position-{{ forloop.counter }}" data-service-id="{{ service.id }}">
+            <div class="icon-wrapper">
+                <img src="{{ service.icon.url }}" alt="{{ service.name }}">
+            </div>
+            <div class="service-tooltip">
+                <h3>{{ service.name }}</h3>
+                <p>{{ service.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="database-section">
+    <div class="database-header">
+        <h2>CƠ SỞ DỮ LIỆU TỈNH</h2>
+    </div>
+    <div class="database-content">
+        <p>
+            Hệ thống Cơ sở dữ liệu giáo dục và giáo dục mầm non và giáo dục phổ thông
+            là một CSDL tập trung, được dùng thống nhất trong toàn ngành tại Tỉnh/Thành phố
+            nhằm cung cấp các thông tin đầy đủ, nhanh chóng, chính xác phục vụ công tác
+            quản lý điều hành, hỗ trợ ra quyết định của các cơ quan Quản lý giáo dục.
+        </p>
+    </div>
+    <div class="database-buttons">
+        <a href="http://huongdancsdl.quanlytruonghoc.vn/" class="db-btn doc-btn">
+            TÀI LIỆU HƯỚNG DẪN
+        </a>
+        <a href="https://tailieu.quangich.com/co-so-du-lieu-tich-hop-nghiep-vu-quan-ly-truong-hoc/ckh/1" class="db-btn video-btn">
+            VIDEO HƯỚNG DẪN
+        </a>
+    </div>
+    <div class="login-section">
+        <h3>ĐĂNG NHẬP HỆ THỐNG</h3>
+        <div class="login-buttons">
+            <a href="https://sgd.hoabinh.edu.vn/" class="login-btn">Sở Giáo dục</a>
+            <a href="https://pgd.hoabinh.edu.vn/" class="login-btn">Phòng Giáo dục</a>
+            <a href="https://truong.hoabinh.edu.vn/" class="login-btn">Hệ thống trường</a>
+        </div>
+    </div>
+</div>
+
+<div class="services-detail">
+    // eNetViet Section 
+    <section class="service-detail-section">
+        <div class="service-detail-header">
+            <h3>eNetViet - ỨNG DỤNG TRUYỀN THÔNG GIÁO DỤC</h3>
+        </div>
+        <div class="service-detail-content">
+            <div class="service-image">
+                <img src="{% static 'images/enetviet.png' %}" alt="eNetViet">
+            </div>
+            <div class="service-description">
+                <p>eNetViet là ứng dụng trực tuyến giúp kết nối Gia đình và Nhà trường, hỗ trợ công tác truyền thông, điều hành của Sở GD&ĐT, Phòng GD&ĐT, Ban giám hiệu nhà trường và công tác chuyên môn của Cán bộ giáo viên trong các trường học, hỗ trợ hiệu quả trong công tác chuyển đổi số của Nhà trường.</p>
+                <div class="service-links">
+                    <a href="https://web.enetviet.com/" class="service-btn">ĐĂNG NHẬP HỆ THỐNG</a>
+                    <a href="https://tailieu.quangich.com/ung-dung-lien-lac-truc-tuyen-enetviet/ckh/1005" class="service-btn">VIDEO HƯỚNG DẪN</a>
+                    <a href="#" class="service-btn">TÀI LIỆU HƯỚNG DẪN</a>
+                    <a href="http://app.enetviet.com/" class="service-btn">TẢI ỨNG DỤNG</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    // MISA EMIS Section 
+    <section class="service-detail-section">
+        <div class="service-detail-header">
+            <h3>THANH TOÁN KHÔNG DÙNG TIỀN MẶT</h3>
+        </div>
+        <div class="service-detail-content">
+            <div class="service-image">
+                <img src="{% static 'images/misa-emis.png' %}" alt="MISA EMIS">
+            </div>
+            <div class="service-description">
+                <p>Giúp nhà trường thực hiện các nghiệp vụ thu học phí theo mô hình khép kín như: lập kế hoạch thu học phí, thông báo thu tiền học đến phụ huynh, thanh toán học phí trực tuyến, xuất hóa đơn điện tử, đối soát tiền thu được và lập các báo cáo, thống kê</p>
+                <div class="service-links">
+                    <a href="https://emisapp.misa.vn/" class="service-btn">ĐĂNG NHẬP HỆ THỐNG</a>
+                    <a href="https://youtube.com/playlist?list=PLSYiZGlUB5r7sEHee9tRzKytgNAYDuAoE&si=zsiG-fmS1RrRASIe" class="service-btn">VIDEO HƯỚNG DẪN</a>
+                    <a href="https://emishelp.misa.vn/ac/khoan_thu/" class="service-btn">TÀI LIỆU HƯỚNG DẪN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    // More service sections as needed 
+    //eCard  Section 
+    <section class="service-detail-section">
+        <div class="service-detail-header">
+            <h3>E.CARD - HỆ THỐNG ĐIỂM DANH THÔNG MINH</h3>
+        </div>
+        <div class="service-detail-content">
+            <div class="service-image">
+                <img src="{% static 'images/ecard.png' %}" alt="ECARD">
+            </div>
+            <div class="service-description">
+                <p>E-CarD là sản phẩm Thẻ thông minh được tích hợp đồng thời nhiều tính năng của thẻ học sinh như: Thẻ thư viện, Thẻ điểm danh, Thẻ gửi xe…. Ngoài ra thẻ được tích hợp với phần mềm eNetViet là ứng dụng liên lạc giữa Nhà trường và Phụ huynh giúp thẻ phát huy nhiều tác dụng như khi học sinh điểm danh hệ thống sẽ tự động thông báo cho Phụ huynh việc học sinh đến trường hay tan học.</p>
+                    <a href="#" class="service-btn">ĐĂNG NHẬP HỆ THỐNG</a>
+                    
+                    <a href="https://sgd.hoabinh.edu.vn/Login.aspx?returnUrl=~/default.aspx" class="service-btn">SỞ GIÁO DỤC</a>
+                    <a href="https://pgd.hoabinh.edu.vn/Login.aspx?returnUrl=~/default.aspx" class="service-btn"> PHÒNG GIÁO DỤC</a>
+                    <a href="http://app.enetviet.com/" class="service-btn">HỆ THỐNG TRƯỜNG</a>
+                    <br>
+                    <br>
+                    <a href="https://tailieu.quangich.com/the-thong-minh-e-card/ckh/2015" class="service-btn">VIDEO HƯỚNG DẪN</a>
+                    <a href="#" class="service-btn">TÀI LIỆU HƯỚNG DẪN</a>
+                    <a href="{% url 'landing_page' %}" class="service-btn">KHÓA HỌC</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/homepage.js' %}"></script>
+{% endblock %}
+-->
+
+!

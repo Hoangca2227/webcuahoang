@@ -1,0 +1,292 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.frame-1-1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px; /* nếu cần để tránh đè footer */
+}
+
+
+/* Ảnh nền nằm trong cùng */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover ; /* hoặc contain nếu bạn muốn nó vừa vặn */
+  z-index: 0; /* nằm dưới cùng */
+}
+
+/* Các node đè lên ảnh nền */
+.node-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;   /* nhỏ hơn một nửa */
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.node-2,
+.node-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;   /* nhỏ hơn một nửa */
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.node-4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;   /* nhỏ hơn một nửa */
+  height: auto;
+  transform: translate(150%, -50%);
+  z-index: 1;
+}
+/*
+.text-10{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;   
+  height: auto;
+  transform: translate(270%, -90%);
+  z-index: 1;
+}
+.text-10 .span1 {
+  display: block;
+}
+.text-10 .span2 {
+  white-space: nowrap;
+}
+*/
+.text-10 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;   
+  height: auto;
+  transform: translate(270%, -90%);
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0;
+}
+.text-10 .span1 {
+  display: block;
+}
+.text-10 .span2 {
+  white-space: nowrap;
+}
+
+.text-10:hover {
+  text-decoration: underline;
+  color: #ffd700; /* vàng khi hover */
+}
+
+.node-5{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;   /* nhỏ hơn một nửa */
+  height: auto;
+  transform: translate(-150%, -50%);
+  z-index: 1;
+}
+
+.text-11{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;   /* nhỏ hơn một nửa */
+  height: auto;
+  transform: translate(-380px, -150%);
+  z-index: 1;
+  direction: rtl; /* Right-to-left text direction */
+  text-align: right; /* Align the text to the right */
+  font-weight: 600;
+}
+.text-11 .span1 {
+  display: block;
+}
+.text-11 .span2 {
+  white-space: nowrap;
+}
+
+
+.node-6{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;   /* nhỏ hơn một nửa */
+  height: auto;
+  transform: translate(-50%, -250%);
+  z-index: 1;
+}
+
+.text-12{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;   /* nhỏ hơn một nửa */
+  height: auto;
+  transform: translate(70px, -250px);
+  z-index: 1;
+  font-weight: 550;
+}
+.text-12 .span1 {
+  display: block;
+}
+.text-12 .span2 {
+  white-space: nowrap;
+}
+
+.text-13{
+  position: absolute;
+  font-size: 34px;
+  left: 34%;
+  
+
+}
+.text-13 .span1 {
+  display: block;
+  font-weight:500;
+  text-indent: 30px; 
+}
+.text-13 .span2 {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.node-2,
+.node-3,
+.node-4,
+.node-5,
+.node-6 {
+  position: absolute;
+  z-index: 1; /* cao hơn ảnh nền */
+}
+
+/* Các đoạn text cũng nằm trên nền */
+.text-10,
+.text-11,
+.text-12,
+.text-13 {
+  position: absolute;
+  z-index: 2; /* cao hơn cả ảnh nếu cần */
+  color: white;
+}
+/* Footer Styles */
+.footer {
+  background: linear-gradient(90deg, #0052cc, #00aaff); /* Gradient xanh đẹp hơn */
+  color: #fff9f9;
+  padding: 40px 0;
+  /*margin-top: 60px;*/
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-heading h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.footer-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-link-item img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+}
+
+.footer-link-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link-item a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #eee;
+}
+
+.copyright span {
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+.copyright a {
+  color: #ffe600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.copyright a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  .footer-heading h2 {
+      font-size: 20px;
+  }
+
+  .footer-link-item {
+      justify-content: center;
+      text-align: center;
+  }
+
+  .footer-link-item img {
+      display: none;
+  }
+}
