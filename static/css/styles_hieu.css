@@ -43,20 +43,23 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;   /* nhỏ hơn một nửa */
-  height: auto;
+  
   transform: translate(-50%, -50%);
   z-index: 1;
+  width: 500px; /* Set desired width */
+  height: 500px;
 }
 
 .node-4{
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100px;   /* nhỏ hơn một nửa */
-  height: auto;
+  
   transform: translate(150%, -50%);
   z-index: 1;
+  width: 500px; /* Set desired width */
+  height: 500px;
+  
 }
 /*
 .text-10{
@@ -106,10 +109,11 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;   /* nhỏ hơn một nửa */
-  height: auto;
+  
   transform: translate(-150%, -50%);
   z-index: 1;
+  width: 500px; /* Set desired width */
+  height: 500px;
 }
 
 .text-11{
@@ -136,10 +140,10 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100px;   /* nhỏ hơn một nửa */
-  height: auto;
   transform: translate(-50%, -250%);
   z-index: 1;
+  width: 500px; /* Set desired width */
+  height: 500px;
 }
 
 .text-12{
