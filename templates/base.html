@@ -64,19 +64,28 @@
 <!--<img src="{% static 'images/background.png' %}" class="background" alt="background" /> -->
 </div>
 <img src="{% static 'images/group-28326-20241017070921-jcakk.png' %}" class="node-1" alt="group-28326-20241017070921-jcakk-1" />
+
 <img src="{% static 'images/ellipse-419-20241017072515-jf9p2.png' %}" class="node-2" alt="ellipse-419-20241017072515-jf9p2-1" />
-<img src="{% static 'images/csdlhb-20241023024505-7oao3.png' %}" class="node-3" alt="csdlhb-20241023024505-7oao3-1" />
-<img src="{% static 'images/enetviet-20241017072734-ltheu.png' %}" class="node-4" alt="enetviet-20241017072734-ltheu-1" />
+
+ {% if images %}
+<img src="{{images.logo_center.url}}" class="node-3" alt="csdlhb-20241023024505-7oao3-1" /> <!---logo giữa-->
+ {% endif %}
+
+{% if images %}
+<img src="{{images.image_bottom_right.url}}" class="node-4" alt="enetviet-20241017072734-ltheu-1" /> <!--ennetviet góc dưới bên phải -->
+ {% endif %}
 <a href="{% url 'landing_page' %}" class="text-10">
     <span class="span1">1.ENETVIET</span>
     <span class="span2">ỨNG DỤNG TRUYỀN THÔNG GIÁO DỤC</span>
 </a>
-
 {% if images %}
-<img src="{{images.logo_center.url}}" class="node-5" alt="group-28326-20241017070921-jcakk-1" />
+<img src="{{images.image_bottom_left.url}}" class="node-5" alt="group-28326-20241017070921-jcakk-1" /> <!--misa bên trái góc dưới -->
  {% endif %}
+
 <p class="text-11"><span class="span1">2.MISA EMIS</span><span class="span2">THANH TOÁN KHÔNG DÙNG TIỀN MẶT</span></p>
-<img src="{% static 'images/ecard-20241017072734-ltgqo.png' %}" class="node-6" alt="ecard-20241017072734-ltgqo-1" />
+{% if images %}
+<img src="{{images.image_top_right.url}}" class="node-6" alt="ecard-20241017072734-ltgqo-1" /> <!-- ecard thằng bên trên cùng-->
+{% endif %}
 <a href ="{% url 'landing_page' %}" class="text-12"><span class="span1">3.E.CARD</span><span class="span2">HỆ THỐNG ĐIỂM DANH THÔNG MINH</span></a>
 <p class="text-13"><span class="span1">SỞ GIÁO DỤC VÀ ĐÀO TẠO HÒA BÌNH </span><span class="span2">HỆ SINH THÁI GIÁO DỤC THÔNG MINH</span></p>
 
